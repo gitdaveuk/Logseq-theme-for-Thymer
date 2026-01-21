@@ -1,0 +1,218 @@
+/*
+* Logseq Dark Theme for Thymer
+* Based on Logseq's default dark theme colors
+*/
+
+/* ------------------------------------------- */
+/* Logseq Dark Theme                           */
+/* ------------------------------------------- */
+html[data-theme="basic-logseq-dark"] {
+    color-scheme: dark;
+
+    /* ------------------------------------------- */
+    /* 1. Headings - Uniform color                */
+    /* ------------------------------------------- */
+    .heading-h1,
+    .heading-h2,
+    .heading-h3,
+    .heading-h4,
+    .heading-h5,
+    .heading-h6 {
+        color: #e9ecef;
+    }
+
+    /* ------------------------------------------- */
+    /* 2. Background Colors                        */
+    /* ------------------------------------------- */
+    --color-bg-50: #4a7c7e;
+    --color-bg-100: #3a6668;
+    --color-bg-150: #2f5456;
+    --color-bg-200: #274548;
+    --color-bg-300: #1f383a;
+    --color-bg-400: #18282a;
+    --color-bg-500: #002b36;
+    --color-bg-600: #002b36;
+    --color-bg-700: #00232d;
+    --color-bg-800: #002b36; /* Sidebar */
+    --color-bg-900: #001e26; /* Main window */
+    --color-bg-950: #001a21;
+    --color-bg-500-50: rgba(0, 43, 54, 0.5);
+    --color-bg-950-50: rgba(0, 26, 33, 0.65);
+
+    /* ------------------------------------------- */
+    /* 3. Primary Colors (Teal/Cyan accent)        */
+    /* ------------------------------------------- */
+    --color-primary-50: #e6fffa;
+    --color-primary-100: #b2f5ea;
+    --color-primary-200: #81e6d9;
+    --color-primary-300: #4fd1c5;
+    --color-primary-400: #06b6d4; /* Logseq teal */
+    --color-primary-500: #0891b2;
+    --color-primary-600: #0e7490;
+    --color-primary-700: #155e75;
+    --color-primary-800: #164e63;
+    --color-primary-900: #083344;
+    --color-primary-950: #042f2e;
+    --color-primary-400-70: rgba(6, 182, 212, 0.7);
+    --color-primary-950-20: rgba(4, 47, 46, 0.2);
+    --color-primary-text-100: #002b36;
+
+    /* ------------------------------------------- */
+    /* 4. Text & Icons                             */
+    /* ------------------------------------------- */
+    --color-text-50: #e9ecef;
+    --color-text-100: #ffffff;
+    --color-text-200: #d3d6db;
+    --color-text-300: #b1b5ba;
+    --color-text-400: #9ca3af;
+    --color-text-500: #6c7481;
+    --color-text-600: #555d6b;
+    --color-text-700: #06b6d4;
+    --color-text-800: #d3d6db;
+    --color-text-900: #1a1a1a;
+    --color-text-950: #6c7481;
+
+    /* ------------------------------------------- */
+    /* 5. Semantic Colors                          */
+    /* ------------------------------------------- */
+    --text-ok: #10b981;
+    --text-status-online: #10b981;
+    --text-warning: #f59e0b;
+    --text-error: #ef4444;
+    --bg-alert: #ef4444;
+    --fg-alert: #e9ecef;
+
+    /* ------------------------------------------- */
+    /* 6. Links, Tags & Mentions                   */
+    /* ------------------------------------------- */
+    --link-color: #06b6d4;
+    --link-hover-color: #22d3ee;
+    --ed-link-color: #06b6d4;
+    --ed-link-hover-color: #22d3ee;
+
+    --ed-hashtag-color: #06b6d4;
+    --ed-hashtag-bg: rgba(6, 182, 212, 0.15);
+
+    --ed-mention-color: #a78bfa;
+    --ed-mention-bg: rgba(167, 139, 250, 0.15);
+    --ed-mention-hover-bg: rgba(167, 139, 250, 0.25);
+    --ed-mention-hover-color: #a78bfa;
+
+    --ed-datetime-color: #fb923c;
+    --ed-datetime-bg: rgba(251, 146, 60, 0.15);
+
+    /* ------------------------------------------- */
+    /* 7. Tasks & Checkboxes                       */
+    /* ------------------------------------------- */
+    --ed-check-div-border: #06b6d4;
+    --ed-check-div-hover-border: #22d3ee;
+    --ed-check-done-bg: #06b6d4;
+    --ed-check-done-fg: #002b36;
+
+    /* Done task styling */
+    .listitem.listitem-task.state-done .lineitem-text {
+        color: #6c7481 !important;
+        text-decoration-color: #6c7481 !important;
+        opacity: 1 !important;
+    }
+
+    /* ------------------------------------------- */
+    /* 8. Selection & Caret                        */
+    /* ------------------------------------------- */
+    --selection-bg: rgba(6, 182, 212, 0.3);
+    --selection-fg: #ffffff;
+    --ed-selection-self-bg: rgba(6, 182, 212, 0.3);
+    --ed-selection-blurred-bg: rgba(6, 182, 212, 0.15);
+
+    --ed-caret-self-radius: 2px;
+    --ed-caret-self-border-width: 0px;
+    --ed-caret-self-background: #06b6d4;
+    --ed-caret-self-box-shadow: 0 0 4px rgba(6, 182, 212, 0.5);
+
+    /* ------------------------------------------- */
+    /* 9. Quotes & Code                            */
+    /* ------------------------------------------- */
+    --ed-quote-border-color: #06b6d4;
+
+    --ed-code-border: transparent;
+    --ed-code-bg: rgba(0, 35, 45, 0.6);
+
+    /* Inline code */
+    .lineitem-code {
+        background-color: var(--color-bg-200) !important;
+        color: #fb923c !important;
+        border-radius: 4px;
+        padding: 2px 5px;
+        font-family: var(--font-monospace);
+    }
+
+    /* Note blocks */
+    --ed-block-note-bg: rgba(6, 182, 212, 0.1);
+    --ed-block-note-border: #06b6d4;
+
+    /* ------------------------------------------- */
+    /* 10. UI Components                           */
+    /* ------------------------------------------- */
+    --cards-bg: #002b36;
+    --cards-hover-bg: #00353f;
+    --cards-border-color: transparent;
+    --cards-border-color-focused: transparent;
+
+    --side-bg-active-focus: #155e75;
+    --side-fg-active-focus: #e9ecef;
+    --sidebar-bg-hover: #00353f;
+    --sidebar-border-color: transparent;
+
+    --cmdpal-bg-color: #002b36;
+    --cmdpal-selected-bg-color: #06b6d4;
+    --cmdpal-selected-fg-color: #002b36;
+    --cmdpal-hover-bg-color: #00353f;
+    --cmdpal-border-color: transparent;
+
+    --input-bg-color: #002b36;
+    --input-border-color: transparent;
+    --input-border-focus: 1px solid #06b6d4;
+    --input-border-shadow: 0 0 8px rgba(6, 182, 212, 0.4);
+
+    --button-primary-bg-color: #06b6d4;
+    --button-primary-fg-color: #002b36;
+    --button-primary-bg-hover-color: #0891b2;
+    --button-bg-color: #00353f;
+    --button-border-color: transparent;
+    --button-bg-hover-color: #274548;
+
+    --color-shadow: rgba(0, 0, 0, 0.3);
+    --color-shadow-cards: 0 4px 6px rgba(0, 0, 0, 0.2);
+    --color-shadow-hover: 0 6px 12px rgba(0, 0, 0, 0.3);
+
+    --logo-color: #06b6d4;
+    --logo-glow-shadow:
+        0 0 15px rgba(6, 182, 212, 0.5),
+        0 0 30px rgba(6, 182, 212, 0.3);
+
+    /* Enums */
+    --enum-red-bg: rgba(239, 68, 68, 0.25);
+    --enum-red-fg: #ef4444;
+    --enum-orange-bg: rgba(251, 146, 60, 0.25);
+    --enum-orange-fg: #fb923c;
+    --enum-yellow-bg: rgba(250, 204, 21, 0.25);
+    --enum-yellow-fg: #facc15;
+    --enum-green-bg: rgba(16, 185, 129, 0.25);
+    --enum-green-fg: #10b981;
+    --enum-cyan-bg: rgba(6, 182, 212, 0.25);
+    --enum-cyan-fg: #06b6d4;
+    --enum-blue-bg: rgba(59, 130, 246, 0.25);
+    --enum-blue-fg: #3b82f6;
+    --enum-purple-bg: rgba(167, 139, 250, 0.25);
+    --enum-purple-fg: #a78bfa;
+    --enum-pink-bg: rgba(236, 72, 153, 0.25);
+    --enum-pink-fg: #ec4899;
+
+    --prop-border-focused: #002b36;
+    --prop-bg-focused: rgba(6, 182, 212, 0.3);
+    --shadow-sticky-row: 0 6px 12px rgba(0, 0, 0, 0);
+    --ed-drag-handle-color: #06b6d4;
+    --ed-drag-handle-hover-border: #22d3ee;
+
+    --gradient-scrim: none;
+}
